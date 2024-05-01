@@ -29,7 +29,7 @@ export function Success (){
             const confDiv = document.getElementById('conf');
     
             // Send a POST request to confirm booking
-            const response = await axios.post("http://localhost:5050/guest/confirmBooking", { listing, checkin, checkout, user });
+            const response = await axios.post("https://homeaway-backend.onrender.com/guest/confirmBooking", { listing, checkin, checkout, user });
     
             // Check if the response indicates success
             if (response.data && response.data.success) {

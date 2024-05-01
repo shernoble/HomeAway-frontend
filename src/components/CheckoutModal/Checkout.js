@@ -33,7 +33,7 @@ export function Checkout({ show, handleClose, handleConfirmation ,listing,num_da
     //     // const headers={
     //     //     'Content-Type':'application/json'
     //     // }
-    //     const response = await axios.post('http://localhost:5050/guest/createCheckoutSession',{listing,num_days});
+    //     const response = await axios.post('https://homeaway-backend.onrender.com/guest/createCheckoutSession',{listing,num_days});
 
     //     console.log("response : ",response);
 
@@ -56,7 +56,7 @@ export function Checkout({ show, handleClose, handleConfirmation ,listing,num_da
         const headers = {
             "Content-Type":"application/json"
         }
-        const response = await fetch("http://localhost:5050/guest/create-checkout-session",{
+        const response = await fetch("https://homeaway-backend.onrender.com/guest/create-checkout-session",{
             method:"POST",
             headers:headers,
             body:JSON.stringify(body)
@@ -74,7 +74,7 @@ export function Checkout({ show, handleClose, handleConfirmation ,listing,num_da
     }
 
     const handleSubmit=async(req,res) => {
-        const response = await axios.post('http://localhost:5050/guest/createCheckoutSession',{listing,num_days});
+        const response = await axios.post('https://homeaway-backend.onrender.com/guest/createCheckoutSession',{listing,num_days});
     }
 
     const modalStyle = {

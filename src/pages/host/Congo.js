@@ -7,7 +7,7 @@ import axios from 'axios';
 
 function Congo() {
   const navigate = useNavigate();
-  const finsubmitLink = "http://localhost:5050/host/congo";
+  const finsubmitLink = "https://homeaway-backend.onrender.com/host/congo";
   const listingData = useSelector(state => state.listing);
 
   const handleFormSubmit = async (e) => {

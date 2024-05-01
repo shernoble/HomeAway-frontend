@@ -42,7 +42,7 @@ export function GuestConfirmation(){
         const bookingMessage=document.getElementById('booking-message');
         const confetti=document.getElementsByClassName('cp');
         const confDiv=document.getElementById('conf');
-        const response=await axios.post("http://localhost:5050/guest/confirmBooking",{listing,checkin,checkout,user});
+        const response=await axios.post("https://homeaway-backend.onrender.com/guest/confirmBooking",{listing,checkin,checkout,user});
         console.log(response.data.booking);
         if (response.data.success) {
             // Booking successful
@@ -101,7 +101,7 @@ export function GuestConfirmation(){
             const headers = {
                 "Content-Type":"application/json"
             }
-            const response = await fetch("http://localhost:5050/guest/create-checkout-session",{
+            const response = await fetch("https://homeaway-backend.onrender.com/guest/create-checkout-session",{
                 method:"POST",
                 headers:headers,
                 body:JSON.stringify(body)

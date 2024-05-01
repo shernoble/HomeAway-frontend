@@ -33,7 +33,7 @@ export function AdminGuestList() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5050/admin/guest/search", { searchterm })
+        axios.post("https://homeaway-backend.onrender.com/admin/guest/search", { searchterm })
             .then((response) => {
                 if (response.data.results) {
                     setGuestList(response.data.results);
@@ -64,7 +64,7 @@ export function AdminGuestList() {
     }
 
     const handleDeleteUser = (id) => {
-        axios.post("http://localhost:5050/admin/delete/guest", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/delete/guest", { id })
             .then((response) => {
                 if (response.err) {
                     console.log(response.err);
@@ -92,7 +92,7 @@ export function AdminGuestList() {
     const handleVerifyUser=(id) => {
         // console.log("user verified");
         // send id to back end
-        axios.post("http://localhost:5050/admin/verify/guest", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/verify/guest", { id })
             .then((response) => {
                 console.log(response.data.message);
                 if (!response.data.success) {

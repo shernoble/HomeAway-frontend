@@ -34,7 +34,7 @@ export function AdminHomePage() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5050/admin/listing/search", { searchTerm }).then((response) => {
+        axios.post("https://homeaway-backend.onrender.com/admin/listing/search", { searchTerm }).then((response) => {
         if (response.data.results) {
             setListings(response.data.results);
         } else {
@@ -64,7 +64,7 @@ export function AdminHomePage() {
     };
 
     const handleDeleteListing = (id) => {
-        axios.post("http://localhost:5050/admin/delete/listing", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/delete/listing", { id })
         .then((response) => {
             // Filter out the deleted user from the guestList
             if(response.err){
@@ -91,7 +91,7 @@ export function AdminHomePage() {
     const handleVerifyListing=(id) => {
         // console.log("user verified");
         // send id to back end
-        axios.post("http://localhost:5050/admin/verify/listing", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/verify/listing", { id })
             .then((response) => {
                 console.log(response.data.message);
                 if (!response.data.success) {

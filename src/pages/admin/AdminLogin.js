@@ -5,7 +5,7 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 export function AdminLogin(){
     const registerLink="/admin/register";
     const navigateLink="/admin/guestList";
-    const postLink="http://localhost:5050/admin/login";
+    const postLink="https://homeaway-backend.onrender.com/admin/login";
     const title="HomeAway(Admin)";
     const picno="/imgs/56.jpg";
     const role="admin";

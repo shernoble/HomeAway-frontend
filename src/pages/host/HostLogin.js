@@ -5,7 +5,7 @@ import { HostLoginForm } from "../../components/HostLoginForm/HostLoginForm";
 export function HostLogin(){
     const registerLink="/host/register";
     const navigateLink="/host/dashboard";
-    const postLink="http://localhost:5050/host/login";
+    const postLink="https://homeaway-backend.onrender.com/host/login";
     const title="HomeAway(Host)";
     const picno="/imgs/34.jpg";
 

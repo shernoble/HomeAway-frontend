@@ -6,7 +6,7 @@ export function HostRegister(){
     const title="HomeAway(Host)";
     const picno="/imgs/12.jpg";
     const navigateLink="/host/login";
-    const registerLink="http://localhost:5050/host/register";
+    const registerLink="https://homeaway-backend.onrender.com/host/register";
     return (
         <HelmetProvider>
             <Helmet>

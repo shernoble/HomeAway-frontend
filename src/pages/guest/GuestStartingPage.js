@@ -48,7 +48,7 @@ export function GuestStartingPage(){
             // else
             // handle the submission
             // store the formvalues as a state in store?
-            const response = await axios.post('http://localhost:5050/guest/startingPage', {
+            const response = await axios.post('https://homeaway-backend.onrender.com/guest/startingPage', {
                     formvalues
                     });
             console.log(response.data);

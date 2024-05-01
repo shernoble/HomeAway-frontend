@@ -39,7 +39,7 @@ export function AdminReports() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5050/admin/report/search", { searchterm })
+        axios.post("https://homeaway-backend.onrender.com/admin/report/search", { searchterm })
             .then((response) => {
                 console.log("Search response:", response);
 

@@ -39,7 +39,7 @@ export function GuestBookingDetails() {
 
     useEffect(() => {
         if (booking) {
-            axios.get(`http://localhost:5050/guest/booking/${booking.ListingID}`)
+            axios.get(`https://homeaway-backend.onrender.com/guest/booking/${booking.ListingID}`)
                 .then((response) => {
                     console.log(response.data);
                     setListing(response.data.listing);
@@ -59,7 +59,7 @@ export function GuestBookingDetails() {
         // send to backend
         try {
             if(user)
-            {const response = await axios.post("http://localhost:5050/guest/cancelBooking", {
+            {const response = await axios.post("https://homeaway-backend.onrender.com/guest/cancelBooking", {
                 id: booking._id,
                 user:user
             });

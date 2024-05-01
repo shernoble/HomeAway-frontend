@@ -4,7 +4,7 @@ import { RegisterForm } from "../../components/RegisterForm/RegisterForm"
 
 export function AdminRegister(){
     const navigateLink="/admin/guestList";
-    const registerLink="http://localhost:5050/admin/register";
+    const registerLink="https://homeaway-backend.onrender.com/admin/register";
     const title="HomeAway(Admin)";
     const picno="/imgs/56.jpg";
     const loginLink="/admin/login";

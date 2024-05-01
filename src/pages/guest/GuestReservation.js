@@ -25,7 +25,7 @@ export function GuestReservation() {
 
     useEffect(() => {
         axios
-        .get(`http://localhost:5050/guest/reserve/${id}`)
+        .get(`https://homeaway-backend.onrender.com/guest/reserve/${id}`)
         .then(result => {
             setListing(result.data);
             setLoading(false); // Set loading to false once data is fetched

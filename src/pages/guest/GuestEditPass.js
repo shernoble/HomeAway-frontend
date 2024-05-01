@@ -12,7 +12,7 @@ import { Loading } from '../../components/Loading/Loading';
 export function ChangePassword (){
     const [isLoading, setIsLoading] = useState(true);
     const user=useSelector(state => state.auth.user);
-    const endpoint = 'http://localhost:5050/guest/editPass';
+    const endpoint = 'https://homeaway-backend.onrender.com/guest/editPass';
 
     useEffect(() => {
         // Simulate loading for 2 seconds, then set isLoading to false

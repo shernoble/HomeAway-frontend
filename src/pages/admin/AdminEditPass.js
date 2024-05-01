@@ -8,7 +8,7 @@ import { Footer } from '../../components/Footer2/GFooter';
 
 export function AdminChangePassword (){
     const user = useSelector(state => state.auth.user);
-    const endpoint = 'http://localhost:5050/guest/editPass';
+    const endpoint = 'https://homeaway-backend.onrender.com/guest/editPass';
     const [isLoading, setIsLoading] = useState(true);
 
     // Simulating loading for demonstration purposes

@@ -35,7 +35,7 @@ export function GuestHomepage() {
     useEffect(() => {
         if (allListings === null) {
         axios
-        .get('http://localhost:5050/guest/homepagefull')
+        .get('https://homeaway-backend.onrender.com/guest/homepagefull')
         .then((response) => {
             // Update the state with the fetched data
             setAllListings(response.data);
@@ -54,7 +54,7 @@ export function GuestHomepage() {
         e.preventDefault();
         // send search query for all listings in db
         // return results
-        axios.post('http://localhost:5050/guest/search',{searchterm})
+        axios.post('https://homeaway-backend.onrender.com/guest/search',{searchterm})
         .then((response) => {
             console.log("this is what we received:");
             console.log(response.data.results);
@@ -75,7 +75,7 @@ export function GuestHomepage() {
 // get all results
     const handleHomepage = () => {
         axios
-        .get('http://localhost:5050/guest/homepagefull')
+        .get('https://homeaway-backend.onrender.com/guest/homepagefull')
         .then((response) => {
             // Update the state with the fetched data
             setAllListings(response.data);

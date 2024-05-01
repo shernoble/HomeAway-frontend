@@ -24,9 +24,9 @@ export function RegistrationForm() {
         try {
 
             if (userType === 'guest') {
-                route = "http://localhost:5050/guest/register"; // Route for guest registration
+                route = "https://homeaway-backend.onrender.com/guest/register"; // Route for guest registration
             } else if (userType === 'host') {
-                route = "http://localhost:5050/host/register"; // Route for host registration
+                route = "https://homeaway-backend.onrender.com/host/register"; // Route for host registration
             }
 
             const response = await axios.post(route, {

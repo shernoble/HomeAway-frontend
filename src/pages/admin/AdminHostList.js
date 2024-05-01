@@ -34,7 +34,7 @@ export function AdminHostList() {
 
     const handleSearch = (e) => {
         e.preventDefault();
-        axios.post("http://localhost:5050/admin/host/search", { searchterm })
+        axios.post("https://homeaway-backend.onrender.com/admin/host/search", { searchterm })
             .then((response) => {
                 if (response.data.results) {
                     setHostList(response.data.results);
@@ -91,7 +91,7 @@ export function AdminHostList() {
     const handleVerifyUser=(id) => {
         // console.log("user verified");
         // send id to back end
-        axios.post("http://localhost:5050/admin/verify/host", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/verify/host", { id })
             .then((response) => {
                 console.log(response.data.message);
                 if (!response.data.success) {

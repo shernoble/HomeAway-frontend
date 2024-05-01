@@ -5,7 +5,7 @@ import { HelmetProvider,Helmet } from 'react-helmet-async';
 import HostNav from '../../components/HostNav/HostNav';
 export function HostEditPass (){
     // const user=useSelector(state => state.auth.user);
-    const endpoint = 'http://localhost:5050/host/pass';
+    const endpoint = 'https://homeaway-backend.onrender.com/host/pass';
     // console.log(user);
     return (
         <HelmetProvider>

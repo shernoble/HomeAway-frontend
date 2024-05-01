@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function P12h() {
   const navigate = useNavigate();
   const [houseinfo, setHouseinfo] = useState([]);
-  const getLink = "http://localhost:5050/host/getUserListings";
+  const getLink = "https://homeaway-backend.onrender.com/host/getUserListings";
 
   useEffect(() => {
     const fetchUserListings = async () => {

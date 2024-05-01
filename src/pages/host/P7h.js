@@ -97,7 +97,7 @@ files.forEach((file, index) => {
 // Now formData contains all files appended with keys "image1", "image2", etc.
 
             
-                const response = await axios.post('http://localhost:5050/host/uploadimages', formData)
+                const response = await axios.post('https://homeaway-backend.onrender.com/host/uploadimages', formData)
 
             
             

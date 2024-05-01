@@ -31,7 +31,7 @@ export function GuestProfile() {
         // }, 1000);
 
         // return () => clearTimeout(timer); // Cleanup on unmount
-        axios.get("http://localhost:5050/guest/getBookings",{ params: { user_id: "64ff40bbedb5d102901fa6f9" } })
+        axios.get("https://homeaway-backend.onrender.com/guest/getBookings",{ params: { user_id: "64ff40bbedb5d102901fa6f9" } })
         .then((response) => {
             setBookings(response.data.bookings);
             console.log(response.data);
