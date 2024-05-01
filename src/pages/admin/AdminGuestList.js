@@ -20,7 +20,7 @@ export function AdminGuestList() {
     useEffect(() => {
         // Fetch the guest list when the component mounts
         axios
-            .get("/admin/guestList")
+            .get("https://homeaway-backend.onrender.com/admin/guestList")
             .then((response) => {
                 setGuestList(response.data);
                 setIsLoading(false);

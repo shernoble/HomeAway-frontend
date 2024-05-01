@@ -19,7 +19,7 @@ export function UserReportForm() {
         event.preventDefault();
         // const reportMessage=document.getElementById('report-message');
         // post it to backend
-        const response=await axios.post("/guest/report",{report:report,user:user});
+        const response=await axios.post("https://homeaway-backend.onrender.com/guest/report",{report:report,user:user});
         console.log(response.data);
         if(!response.data.success){
             // report not submitted

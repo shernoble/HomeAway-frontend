@@ -16,7 +16,7 @@ export function AdminReports() {
 
     useEffect(() => {
         axios
-            .get("/admin/reports")
+            .get("https://homeaway-backend.onrender.com/admin/reports")
             .then((response) => {
                 // Format date for each report
                 const formattedReports = response.data.map(report => ({
@@ -61,7 +61,7 @@ export function AdminReports() {
     }
 
     const handleDeleteReport = (id) => {
-        axios.post("/admin/delete/report", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/delete/report", { id })
         .then((response) => {
             if(response.err){
                 console.log(response.err);

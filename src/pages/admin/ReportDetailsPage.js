@@ -13,7 +13,7 @@ export function ReportDetailsPage() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        axios.get(`/admin/reports/${id}`)
+        axios.get(`https://homeaway-backend.onrender.com/admin/reports/${id}`)
             .then((response) => {
                 setReport(response.data.report);
                 setGuest(response.data.guest);
@@ -25,7 +25,7 @@ export function ReportDetailsPage() {
     
     
     const handleDeleteReport = () => {
-        axios.post("/admin/delete/report", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/delete/report", { id })
             .then((response) => {
                 if (response.err) {
                     console.log(response.err);

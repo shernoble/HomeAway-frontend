@@ -21,7 +21,7 @@ export function AdminHostList() {
     useEffect(() => {
         // Fetch the host list when the component mounts
         axios
-            .get("/admin/hostList")
+            .get("https://homeaway-backend.onrender.com/admin/hostList")
             .then((response) => {
                 setHostList(response.data);
                 setIsLoading(false);
@@ -65,7 +65,7 @@ export function AdminHostList() {
     }
 
     const handleDeleteUser = (id) => {
-        axios.post("/admin/delete/host", { id })
+        axios.post("https://homeaway-backend.onrender.com/admin/delete/host", { id })
             .then((response) => {
                 // Filter out the deleted user from the hostList
                 if (response.err) {

@@ -21,7 +21,7 @@ export function AdminHomePage() {
     useEffect(() => {
         // Fetch the listing when the component mounts
         axios
-        .get("/admin/homepage")
+        .get("https://homeaway-backend.onrender.com/admin/homepage")
         .then((response) => {
             setListings(response.data);
             setIsLoading(false);
