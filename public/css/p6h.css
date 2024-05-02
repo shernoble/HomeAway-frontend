@@ -1,7 +1,7 @@
 .a1,.a2,.a3,.a4{
     margin: auto auto 30px auto;
     width: 600px;
-    height: 100px;
+    height: 80px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;

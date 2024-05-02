@@ -10,14 +10,14 @@
     max-width: 1500px; 
     display: flex; 
     align-items: center; 
-    top:350px;
-    height: 450px;
-    width:1500px;
+    top:320px;
+    height: 300px;
+    width:1200px;
 }
 
 .hover-box img {
     width: 400px; 
-    height: 350px;
+    height: 250px;
     margin-right: 20px;
 }
 
@@ -33,4 +33,22 @@
     margin: 0; 
     font-size: 25px;
 
+}
+
+i.button {
+    position: absolute;
+    top: 26%;
+    left:3%;
+    transform: translateY(-50%);
+    height: 36px;
+    width: 36px;
+    background-color:  #343f4f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 36px;
+    color: #fff;
+    font-size: 15px;
+    transition: all 0.3s linear;
+    z-index: 100;
+    cursor: pointer;
 }

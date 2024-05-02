@@ -2,7 +2,7 @@ import { useState} from "react"
 import {useDispatch,useSelector} from "react-redux"
 import { Helmet,HelmetProvider } from "react-helmet-async";
 import { NavLink,useNavigate,Link } from "react-router-dom";
-import { AuthActions } from "../../store/authSlice";
+import { AuthhostActions } from "../../store/authSlice-host";
 import { isEmailValid } from "../../js/loginRegValidations";
 import axios from "axios";
 
@@ -10,7 +10,7 @@ export function HostLoginForm({ postLink, navigateLink, title, registerLink, pic
     {
     const dispatch=useDispatch();
     const navigate=useNavigate();
-    const user=useSelector(state => state.auth.user);
+    const user=useSelector(state => state.hostauth.user);
     
     const [formvalues,setFormValues]=useState({
         email:'',
@@ -41,7 +41,7 @@ export function HostLoginForm({ postLink, navigateLink, title, registerLink, pic
                     if(response.data.auth){
                         // LOGIN SUCCESS
                         console.log(response.data.user);
-                        dispatch(AuthActions.login(response.data.user));
+                        dispatch(AuthhostActions.login(response.data.user));
                         dispatch({ type: 'UPDATE_HOST_EMAIL', payload: formvalues.email });
                         navigate(navigateLink);
             

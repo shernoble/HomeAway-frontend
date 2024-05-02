@@ -1,4 +1,3 @@
-
 .c1,.c2
 {
     margin-top: 10px;
@@ -68,4 +67,19 @@ hr {
   margin-top: 100px;
   border: none;
   border-top: 5px solid #000;
+}
+.cn{
+  margin-top: 10px;
+  margin-bottom:10px;
+  font-size: larger;
+  align-content: center;
+  border-radius:500px;
+  width:150px;
+  height:40px;
+  border:1px solid black;
+  position:relative;
+  margin-left:1350px;
+  background-color:black;
+  color:white;  
+  cursor: pointer;
 }

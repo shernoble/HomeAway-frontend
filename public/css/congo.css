@@ -11,7 +11,7 @@
             min-height: 100vh;
             display: grid;
             place-content: center;
-            background-image: url('/public/images/congo.jpg');
+            background-image: url('../images/congo.jpg');
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;

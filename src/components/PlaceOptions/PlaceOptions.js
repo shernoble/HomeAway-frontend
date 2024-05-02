@@ -48,13 +48,13 @@ export function PlaceOptions({ navigateLink,title }) {
       </div>
       <form onSubmit={handleSubmit}>
         <div className="bg-img">
-          <h1 style={{ fontSize: '45px', marginTop: '0px', padding: '12px' }}>
+          <h1 style={{ fontSize: '35px', marginTop: '0px', padding: '12px' }}>
             Which of these describe your place
           </h1>
 
           <div className="c3">
             <div>
-              <img src="/images/img1.jpg" alt="House img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img1.jpg" alt="House img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -70,7 +70,7 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
             <div>
-              <img src="/images/img2.jpg" alt="Flat img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img2.jpg" alt="Flat img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -86,7 +86,7 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
             <div>
-              <img src="/images/img3.jpg" alt="Cabin img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img3.jpg" alt="Cabin img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -104,7 +104,7 @@ export function PlaceOptions({ navigateLink,title }) {
           </div>
           <div className="c4">
             <div>
-              <img src="/images/img4.jpg" alt="Cave img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img4.jpg" alt="Cave img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -120,7 +120,7 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
             <div>
-              <img src="/images/img5.jpg" alt="Container img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img5.jpg" alt="Container img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -136,7 +136,7 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
             <div>
-              <img src="/images/img6.jpg" alt="Boat img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img6.jpg" alt="Boat img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -152,9 +152,9 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
           </div>
-          <div className="c5">
+          <div className="c5" style={{marginBottom:"50px"}}>
             <div>
-              <img src="/images/img7.jpg" alt="Farm House img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img7.jpg" alt="Farm House img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -170,7 +170,7 @@ export function PlaceOptions({ navigateLink,title }) {
               <br />
             </div>
             <div>
-              <img src="/images/img8.jpg" alt="Castle img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+              <img src="/images/img8.jpg" alt="Castle img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -185,8 +185,8 @@ export function PlaceOptions({ navigateLink,title }) {
               </label>
               <br />
             </div>
-            <div>
-              <img src="/images/img9.jpg" alt="Tree House img" width="120px" height="120px" style={{ marginTop: '3px' }} />
+            <div >
+              <img src="/images/img9.jpg" alt="Tree House img" width="100px" height="100px" style={{ marginTop: '3px' }} />
               <br />
               <input
                 type="radio"
@@ -203,7 +203,7 @@ export function PlaceOptions({ navigateLink,title }) {
             </div>
           </div>
           </div>
-        <hr />
+        <hr style={{marginTop:"0px"}}/>
         <div>
           <div>
             <button className="c1" type="button" onClick={handleBack}>

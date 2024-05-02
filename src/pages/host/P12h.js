@@ -8,7 +8,7 @@ import axios from 'axios';
 export default function P12h() {
   const navigate = useNavigate();
   const [houseinfo, setHouseinfo] = useState([]);
-  const getLink = "https://homeaway-backend.onrender.com/host/getUserListings";
+  const getLink = "http://localhost:5050/host/getUserListings";
 
   useEffect(() => {
     const fetchUserListings = async () => {
@@ -45,21 +45,19 @@ export default function P12h() {
         </h2>
       </div>
 
-      <h1 style={{ marginTop: '50px', marginLeft: '660px', marginBottom: '70px' }}>Your Listings</h1>
-      <button onClick={handleCreateListingClick} className="c1">
+      <h1 style={{ marginTop: '50px', marginLeft: '600px', marginBottom: '70px' }}>Your Listings</h1>
+      <button onClick={handleCreateListingClick} className="c1" style={{marginLeft:'1280px'}}>
         Create new listing
       </button>
       <a href="/host/dashboard">
         <i className="fa-solid fa-arrow-left button" id="prev"></i>
       </a>
 
-      <div style={{ marginRight: '400px', marginLeft: '220px', marginBottom: '5px', fontSize: '25px' }}>
-        Your Listings:-
-      </div>
+      
       {houseinfo && houseinfo.length > 0 ? (
         <div className="b1">
           {houseinfo.map((house) => (
-            <div key={house._id} className="container" style={{ marginLeft: '180px', marginTop: '20px' }}>
+            <div key={house._id} className="container" style={{ marginLeft: '100px', marginTop: '20px' }}>
               <img src={house.img_url1} alt="img_url1" height="200px" width="250px" style={{ marginLeft: '130px', marginTop: '50px' }} />
               <img src={house.img_url2} alt="img_url2" height="200px" width="250px" style={{ marginLeft: '130px', marginTop: '50px' }} />
               <img src={house.img_url3} alt="img_url3" height="200px" width="250px" style={{ marginLeft: '130px', marginTop: '50px' }} />

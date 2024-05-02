@@ -4,7 +4,7 @@ import { validPasswords } from '../../js/loginRegValidations';
 import { useSelector } from 'react-redux';
 
 export function PasswordChangeForm({  endpoint }) {
-    const user=useSelector(state => state.auth.user);
+    const user=useSelector(state => state.hostauth.user);
     const [oldPassword, setOldPassword] = useState('');
     const [newPassword, setNewPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');

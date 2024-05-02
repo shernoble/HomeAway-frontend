@@ -5,13 +5,13 @@ const initialState = {
     role:localStorage.getItem("role"),
 };
 
-const authSlice = createSlice({
-    name: "authUser",
+const authSlicehost = createSlice({
+    name: "authUser-host",
     initialState,
     reducers: {
         login(state, action) {
-            state.user = action.payload.user;
-            // state.user={...action.payload}
+            
+            state.user={...action.payload}
             state.role=action.payload.role;
             // Save user information in localStorage with expiration time
             const expiresInMinutes = 60; // Adjust the expiration time as needed
@@ -42,6 +42,6 @@ const authSlice = createSlice({
     },
 });
 
-export const AuthActions = authSlice.actions;
+export const AuthhostActions = authSlicehost.actions;
 
-export default authSlice.reducer;
+export default authSlicehost.reducer;
